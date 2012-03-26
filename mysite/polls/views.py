@@ -33,6 +33,10 @@ def vote(request, poll_id):
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls.views.results', args=(p.id,)))
 
+def results(request, poll_id):
+    p = get_object_or_404(Poll, pk=poll_id)
+    return render_to_response('polls/results.html', {'poll': p})
+    
 # def detail(request, poll_id):
 #     try:
 #         p = Poll.objects.get(pk=poll_id)
@@ -59,8 +63,8 @@ def vote(request, poll_id):
 # def detail(request, poll_id):
 #     return HttpResponse("You're looking at poll %s." % poll_id)
 
-def results(request, poll_id):
-    return HttpResponse("You're looking at the results of poll %s." % poll_id)
+# def results(request, poll_id):
+#     return HttpResponse("You're looking at the results of poll %s." % poll_id)
 
 # def vote(request, poll_id):
 #     return HttpResponse("You're voting on poll %s." % poll_id)
