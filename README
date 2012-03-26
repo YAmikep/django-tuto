@@ -1,10 +1,9 @@
-Source code of the official Django tutorial.
+Source code of the official Django tutorial. (https://docs.djangoproject.com/en/1.4/intro/tutorial01/)
 
 Steps:
-
-Optional - Set up the time zone: 
-As a first step and if you do not want to wonder later why the dates do not match your local time, you should set up the time zone. The default value is the Central time zone in the U.S. (Chicago).
-See https://docs.djangoproject.com/en/1.4/ref/settings/#std:setting-TIME_ZONE and http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
-
 1) manage.py syncdb
 2) manage.py runserver
+
+Optional - Set up the time zone: 
+If you do not want to wonder why the dates do not match your local time, you should set up the time zone. The default value is the Central time zone in the U.S. (Chicago).
+See https://docs.djangoproject.com/en/1.4/ref/settings/#std:setting-TIME_ZONE and http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
