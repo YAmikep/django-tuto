@@ -2,7 +2,7 @@ Source code of the official Django tutorial. (https://docs.djangoproject.com/en/
 It can be use as a "cheatsheet" but I strongly recommend to go through the tutorial by yourself at least once.
 
 Django version: 1.4
-Steps:
+Steps (run within django-tuto/mysite):
 1) manage.py syncdb
 2) manage.py runserver
 
