@@ -9,7 +9,9 @@ def index(request):
 
 def detail(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
-    return render_to_response('polls/detail.html', {'poll': p})
+    return render_to_response('polls/detail.html', {'poll': p},
+                               context_instance=RequestContext(request))
+    # return render_to_response('polls/detail.html', {'poll': p})
 
 # def detail(request, poll_id):
 #     try:
