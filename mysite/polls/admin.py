@@ -1,4 +1,4 @@
-from polls.models import Poll
+from polls.models import Poll, Choice
 from django.contrib import admin
 
 class PollAdmin(admin.ModelAdmin):
@@ -10,4 +10,5 @@ class PollAdmin(admin.ModelAdmin):
     #fields = ['pub_date', 'question']
     
 admin.site.register(Poll, PollAdmin)
+admin.site.register(Choice)
 #admin.site.register(Poll)
