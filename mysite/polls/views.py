@@ -1,6 +1,6 @@
 from django.http import HttpResponseRedirect, HttpResponse
 #from django.template import Context, loader
-from polls.models import Poll
+from polls.models import Poll, Choice
 from django.shortcuts import render_to_response, get_object_or_404
 from django.core.urlresolvers import reverse
 from django.template import RequestContext
@@ -36,7 +36,7 @@ def vote(request, poll_id):
 def results(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     return render_to_response('polls/results.html', {'poll': p})
-    
+
 # def detail(request, poll_id):
 #     try:
 #         p = Poll.objects.get(pk=poll_id)
