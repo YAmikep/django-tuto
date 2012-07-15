@@ -1,5 +1,8 @@
 Source code of the official Django tutorial. (https://docs.djangoproject.com/en/1.4/intro/tutorial01/)
-It can be use as a "cheatsheet" but I strongly recommend to go through the tutorial by yourself at least once.
+
+I made it because the tutorial could be a reference one day and I did not want to go through all of it again.
+Thus, it can be used as a "cheatsheet".
+However, for beginners, I strongly recommend to go through the tutorial by yourself at least once.
 
 Django version: 1.4
 Steps (run within django-tuto/mysite):
